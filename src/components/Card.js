@@ -5,16 +5,20 @@ export default function Card(props) {
 
 
     return (
-        <div>
-            <div  className='card-content'>
-                <div className='card'>
-                    <img src={props.img} alt="" />
-                    <h1 className='card-title'>{props.title}</h1>
-                    <p className='card-description'>{props.description}</p>
-                    <input className="pokeBtn" type='button' value="poke seller" />
-                </div>
-            </div>
 
+        <div className='card-container'>
+            <div className='card'>
+                <img src={props.img} alt="" />
+                <div className='card-text-content'>
+                    <h2 className='card-title'>{props.title}</h2>
+                    <h3 className='card-description'>{props.description}</h3>
+                    <h4 className='quantity'>({props.quantity})</h4>
+                    <h4 className='seller'>sold by @{props.seller}</h4>
+                </div>
+                <input className="pokeBtn" type='button' value="Poke" />
+            </div>
         </div>
+
+
     )
 }

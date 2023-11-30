@@ -3,16 +3,17 @@ import React, { useState } from "react";
 import "./styles.css";
 
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Main from "./components/Main";   //has card information
 import Footer from "./components/Footer";
-import Card from "./components/Card";
+
 
 function App() {
-  const [name, setName] = useState("Given");
 
+  const [name, setName] = useState("Given");
   const date = new Date();
   const hours = date.getHours();
   let timeOfDay;
+
   if (hours > 12) {
     timeOfDay = "Good Afternoon";
   } else if (hours > 18) {
@@ -24,21 +25,13 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app-content">
       <Header />
-      <Main />
-      <h1>
-        {" "}
+
+      <h1 className="timeOfDay">
         {timeOfDay} {name}
       </h1>
-      <Card img="./images/twitch.png"
-        title="my first disk"
-        description="gta 5"
-      />
-      <Card img="./images/ocean-bottom-logo.png"
-        title="my second disk"
-        description="gta 6"
-      />
+      <Main />
 
       <Footer />
     </div>
