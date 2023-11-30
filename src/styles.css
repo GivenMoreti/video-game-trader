@@ -1,137 +1,148 @@
-*{
-    color: #fff;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-body{
-    background-color: #1a1919;
+body {
+  background-color: #1a1919;
 }
-.logo{
-    height: 80px;
-    border-radius:40px ;
-    /* box-shadow:-1px -5px 10px 5px rgb(145, 8, 8); */
-    border:none;
-    width: 15%;
+.logo {
+  height: 80px;
+  border-radius: 40px;
+  /* box-shadow:-1px -5px 10px 5px rgb(145, 8, 8); */
+  border: none;
+  width: 15%;
 }
-.shareBtn{
-    width: 6em;
-    height: 2em;
-    font-size: 30px;
-    border: none;
-    background-color: #fff;
-    color: black;
-    border-radius: 10px;
-    margin-left: 20em;
-}
-.pokeBtn{
-
-    width: 5em;
-    height: 2em;
-    padding: 2px;
-    font-size: 20px;
-    border: none;
-    background-color: #000000;
-    color: #fff;
-    border-radius: 10px;
-    margin-left: 25%;
-   
+.shareBtn {
+  width: 6em;
+  height: 2em;
+  font-size: 30px;
+  border: none;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  margin-left: 20em;
 }
 
-.pokeBtn:hover{
-    background-color: #fff;
-    color:#000000;
-    cursor: pointer;
+.shareBtn:hover {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.pokeBtn {
+  width: 6em;
+  height: 2.2em;
+  padding: 2px;
+  font-size: 20px;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 25%;
 }
 
-.header ul{
-    background-color: rgb(26, 25, 25);
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    gap: 30px;
-    list-style: none;
-    font-size: 20px;
-    color: #fff;
+.pokeBtn:hover {
+  background-color: #fff;
+  color: #000000;
+  cursor: pointer;
+  border: 1px solid #000000;
 }
-.footer{
-    justify-content: space-around;
-    display: flex;
+
+.header ul {
+  background-color: rgb(26, 25, 25);
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  gap: 30px;
+  list-style: none;
+  font-size: 20px;
+  color: #fff;
+}
+.footer {
+  justify-content: space-around;
+  display: flex;
 }
 
 .footer ul {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    gap: 30px;
-    list-style: none;
-    font-size: 15px;
-    color: #fff;
-    position: relative;
-    bottom: 0;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  gap: 30px;
+  list-style: none;
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  justify-items: center;
+}
+.main-content {
+}
+.Cards {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-text-content {
+  padding: 10px;
+}
+.card {
+  background-color: #39393a;
+  width: 250px;
+  height: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  /* box-shadow: -2px 1px 2px 2px #6499b8 */
+}
+
+.main-texts {
+  text-align: center;
+  height: 4em;
+  margin-bottom: 10px;
+}
+.main-text{
+
+
+}
+
+.main-heading {
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.timeOfDay {
     text-align: center;
-    justify-items: center;
+    font-size: 2rem;
+  }
 
-}
-.main-content{
-    
-}
-.Cards{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap:20px;
+.card-container {
+  display: flex;
+  flex-direction: row;
 }
 
-.card-text-content{
-    padding: 10px;
-}
-.card{          
-   
-    background-color: #39393a;
-    width: 250px;
-    height: 100%;
-    padding:5px;
-    border-radius: 10px;
-   
-} 
-
-.main-texts{
-    text-align: center;
+img {
+  width: 100%;
+  height: 15em;
+  border-radius: 10px 10px 10px 10px;
+  image-rendering: crisp-edges;
+  box-shadow: -5px 5px 20px 3px black;
 }
 
-.main-heading{
-    font-size: 4em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.quantity,
+.seller {
+  opacity: 0.5;
 }
-
-.card-container{
-    display: flex;
-    flex-direction:row;
-    
-   
-}
-
-img{
-    width: 100%;
-    height: 10em;
-    border-radius:10px  10px 0px 0px;
-    /* background-color: rgb(91, 91, 93); */
-    
-}
-.timeOfDay{
-    text-align: center;
-}
-.quantity,.seller{
-    opacity: 0.5;
-}
-
 
 @media screen and (max-width: 768px) {
-    .card-container {
-        grid-template-columns: repeat(2, 1fr); /* Adjust for 2 cards per row on small devices */
-    }
+  .card-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust for 2 cards per row on small devices */
+  }
 
-    .shareBtn,
-    .pokeBtn {
-        margin-left: 0; /* Remove margin on small devices */
-    }
+  .shareBtn,
+  .pokeBtn {
+    margin-left: 0; /* Remove margin on small devices */
+  }
 }
