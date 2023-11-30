@@ -8,7 +8,6 @@ body {
 .logo {
   height: 80px;
   border-radius: 40px;
-  /* box-shadow:-1px -5px 10px 5px rgb(145, 8, 8); */
   border: none;
   width: 15%;
 }
@@ -101,9 +100,7 @@ body {
   height: 4em;
   margin-bottom: 10px;
 }
-.main-text{
-
-
+.main-text {
 }
 
 .main-heading {
@@ -111,9 +108,9 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .timeOfDay {
-    text-align: center;
-    font-size: 2rem;
-  }
+  text-align: center;
+  font-size: 2rem;
+}
 
 .card-container {
   display: flex;
