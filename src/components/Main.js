@@ -3,14 +3,20 @@ import Card from "./Card";
 import data from "./data";
 
 export default function Main() {
+  
+
+
+
   const cardData = data.map((item) => {
     return (
       <Card
+        key={item.id}
         img={item.img}
         title={item.title}
         description={item.description}
         quantity={item.quantity}
         seller={item.seller}
+        available = {item.available}
       />
     );
   });
