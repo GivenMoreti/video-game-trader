@@ -20,6 +20,7 @@ body {
   color: black;
   border-radius: 10px;
   margin-left: 20em;
+  cursor: pointer;
 }
 
 .shareBtn:hover {
@@ -128,21 +129,43 @@ img {
 .seller {
   opacity: 0.5;
 }
-.item-status{
+.item-status {
   padding: 5px;
   color: red;
   opacity: 1;
-  font-size: lsmaller;
+  font-size: smaller;
   font-weight: 900;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* position:relative; */
-/* top:50%; */
-  left:50%;
+  position: relative;
+  top: -17.8em;
+  left: 13.1em;
   background-color: #000000;
-  border-radius: 5px;
-  
-
+  border-radius: 0px 10px 0px 10px;
+  border: 2px solid red;
+  box-shadow: 2px 2px 10px 2px red;
 }
+
+.filters{
+  position: relative;
+  top:-5em;
+  left:2em;
+
+
+ 
+}
+select{
+  border-radius:5px;
+  border: none;
+  height: 40px;
+  background-color: #39393a;
+  margin: 2px;
+}
+option{
+  background-color: #1a1919;
+  margin: 2px;
+}
+
+
 
 @media screen and (max-width: 768px) {
   .card-container {

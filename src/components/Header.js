@@ -1,6 +1,13 @@
 import React from "react";
 
 export default function Header() {
+
+    const myFunction = () =>{
+        alert("clicked");
+        
+    }
+
+
     return (
         <nav className="header">
             <ul>
@@ -8,7 +15,7 @@ export default function Header() {
                 <li>Home</li>
                 <li>Shares</li>
                 <li>Friends</li>
-                <input className="shareBtn" type="button" value="Trade" />
+                <input className="shareBtn" type="button" value="Trade" onClick={myFunction} />
             </ul>
         </nav>
     );

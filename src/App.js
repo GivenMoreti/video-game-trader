@@ -13,11 +13,11 @@ function App() {
       const date = new Date();
       const hours = date.getHours();
 
-      if (hours > 12) {
+      if (hours >= 12) {
         setTimeOfDay("Good Afternoon");
-      } else if (hours > 18) {
+      } else if (hours >= 18) {
         setTimeOfDay("Good Evening");
-      } else if (hours > 20) {
+      } else if (hours >= 20) {
         setTimeOfDay("Good Night");
       } else {
         setTimeOfDay("Good Morning");
